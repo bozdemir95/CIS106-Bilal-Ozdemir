@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Bilal Ozdemir"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-02-21 08:40:16 PM"/>
+        <attribute name="created" value="QmlsYWwgT3pkZW1pcjtERVNLVE9QLTJESkM3TUg7MjAyMi0wMi0yMTswNzowMTowNCBQTTszNTU5"/>
+        <attribute name="edited" value="QmlsYWwgT3pkZW1pcjtERVNLVE9QLTJESkM3TUg7MjAyMi0wMi0yMTswODo0MDoxNiBQTTs0OzM2Nzc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Mpg" type="Real" array="False" size=""/>
+            <declare name="milestravelled" type="Real" array="False" size=""/>
+            <declare name="gallons" type="Real" array="False" size=""/>
+            <output expression="&quot;How many miles travelled? &quot;" newline="True"/>
+            <input variable="milestravelled"/>
+            <output expression="&quot; How many gallons used? &quot;" newline="True"/>
+            <input variable="gallons"/>
+            <assign variable="Mpg" expression="milestravelled / gallons"/>
+            <output expression="&quot;The miles per gallons is &quot; &amp; Mpg" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
