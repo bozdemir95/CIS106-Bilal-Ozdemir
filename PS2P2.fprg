@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Bilal Ozdemir"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-02-27 11:53:54 PM"/>
+        <attribute name="created" value="QmlsYWwgT3pkZW1pcjtERVNLVE9QLTJESkM3TUg7MjAyMi0wMi0yMTswNzowMTowNCBQTTszNTU5"/>
+        <attribute name="edited" value="QmlsYWwgT3pkZW1pcjtERVNLVE9QLTJESkM3TUg7MjAyMi0wMi0yNzsxMTo1Mzo1NCBQTTs3OzM2ODY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="LastName" type="String" array="False" size=""/>
+            <declare name="Hours" type="Real" array="False" size=""/>
+            <declare name="PayRate" type="Real" array="False" size=""/>
+            <declare name="GrossPay" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter your last name &quot;" newline="True"/>
+            <input variable="LastName"/>
+            <output expression="&quot;Enter how many hours you worked  &quot;" newline="True"/>
+            <input variable="Hours"/>
+            <output expression="&quot;What is your pay rate? &quot;" newline="True"/>
+            <input variable="PayRate"/>
+            <assign variable="GrossPay" expression="Hours * PayRate"/>
+            <output expression="&quot;Your last name is &quot; &amp; LastName &amp;&#13;&#10;&quot; and your gross pay is &quot; &amp; GrossPay" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
