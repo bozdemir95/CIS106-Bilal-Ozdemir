@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Bilal Ozdemir"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-02-28 01:14:12 AM"/>
+        <attribute name="created" value="QmlsYWwgT3pkZW1pcjtERVNLVE9QLTJESkM3TUg7MjAyMi0wMi0yMTswNzowMTowNCBQTTszNTU5"/>
+        <attribute name="edited" value="QmlsYWwgT3pkZW1pcjtERVNLVE9QLTJESkM3TUg7MjAyMi0wMi0yODswMToxNDoxMiBBTTsxMTszNzA1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Price" type="Real" array="False" size=""/>
+            <declare name="DiscountPercent" type="Real" array="False" size=""/>
+            <declare name="DiscountAmount" type="Real" array="False" size=""/>
+            <declare name="TotalAmount" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter the price of an item &quot;" newline="True"/>
+            <input variable="Price"/>
+            <output expression="&quot;Enter the discount percent &quot;" newline="True"/>
+            <input variable="DiscountPercent"/>
+            <assign variable="DiscountAmount" expression="Price * DiscountPercent"/>
+            <assign variable="TotalAmount" expression="Price - DiscountAmount"/>
+            <output expression="&quot;The discount amount is &quot; &amp; DiscountAmount &amp;&#13;&#10;&quot; and the discounted price of the item is &quot; &amp; TotalAmount" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
