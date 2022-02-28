@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Bilal Ozdemir"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-02-28 12:52:33 AM"/>
+        <attribute name="created" value="QmlsYWwgT3pkZW1pcjtERVNLVE9QLTJESkM3TUg7MjAyMi0wMi0yMTswNzowMTowNCBQTTszNTU5"/>
+        <attribute name="edited" value="QmlsYWwgT3pkZW1pcjtERVNLVE9QLTJESkM3TUg7MjAyMi0wMi0yODsxMjo1MjozMyBBTTs4OzM2NzA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Length" type="Real" array="False" size=""/>
+            <declare name="Width" type="Real" array="False" size=""/>
+            <declare name="Area" type="Real" array="False" size=""/>
+            <declare name="Circumference" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter the length of a rectangle &quot;" newline="True"/>
+            <input variable="Length"/>
+            <output expression="&quot;Enter the width of a rectange &quot;" newline="True"/>
+            <input variable="Width"/>
+            <assign variable="Area" expression="Length * Width"/>
+            <assign variable="Circumference" expression="2 * (Length + Width)"/>
+            <output expression="&quot;The area of the rectangle is &quot; &amp; Area &amp;&#13;&#10;&quot; the circumference of the rectangle is &quot; &amp; Circumference" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
