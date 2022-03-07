@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Bilal Ozdemir"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-03-07 01:37:16 AM"/>
+        <attribute name="created" value="QmlsYWwgT3pkZW1pcjtERVNLVE9QLTJESkM3TUg7MjAyMi0wMy0wNjsxMTowNTozMyBQTTszNTY0"/>
+        <attribute name="edited" value="QmlsYWwgT3pkZW1pcjtERVNLVE9QLTJESkM3TUg7MjAyMi0wMy0wNzswMTozNzoxNiBBTTs0OzM2NjY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="name" type="String" array="False" size=""/>
+            <declare name="cost" type="Real" array="False" size=""/>
+            <declare name="warcost" type="Real" array="False" size=""/>
+            <declare name="total" type="Real" array="False" size=""/>
+            <output expression="&quot;Please enter the name of appliance &quot;" newline="True"/>
+            <input variable="name"/>
+            <output expression="&quot;Please enter the cost of appliance &quot;" newline="True"/>
+            <input variable="cost"/>
+            <if expression="cost &gt;= 1000">
+                <then>
+                    <assign variable="warcost" expression="cost * .10"/>
+                </then>
+                <else>
+                    <assign variable="warcost" expression="cost * 0.05"/>
+                </else>
+            </if>
+            <assign variable="total" expression="cost + warcost"/>
+            <output expression="&quot;Name of appliance &quot; &amp; name" newline="True"/>
+            <output expression="&quot;Cost of appliance &quot; &amp; cost" newline="True"/>
+            <output expression="&quot;Cost of warrantee &quot; &amp; warcost" newline="True"/>
+            <output expression="&quot;Total Cost &quot; &amp; total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
