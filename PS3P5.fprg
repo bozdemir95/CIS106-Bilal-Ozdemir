@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Bilal Ozdemir"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-03-07 01:52:20 AM"/>
+        <attribute name="created" value="QmlsYWwgT3pkZW1pcjtERVNLVE9QLTJESkM3TUg7MjAyMi0wMy0wNjsxMTowNTozMyBQTTszNTY0"/>
+        <attribute name="edited" value="QmlsYWwgT3pkZW1pcjtERVNLVE9QLTJESkM3TUg7MjAyMi0wMy0wNzswMTo1MjoyMCBBTTs1OzM2NTk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="lastname" type="String" array="False" size=""/>
+            <declare name="grosspay" type="Real" array="False" size=""/>
+            <declare name="nodep" type="Real" array="False" size=""/>
+            <declare name="adjgross" type="Real" array="False" size=""/>
+            <declare name="tax" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter last name &quot;" newline="True"/>
+            <input variable="lastname"/>
+            <output expression="&quot;Enter your gross income &quot;" newline="True"/>
+            <input variable="grosspay"/>
+            <output expression="&quot;Enter dependents &quot;" newline="True"/>
+            <input variable="nodep"/>
+            <assign variable="adjgross" expression="grosspay - 12000 * nodep"/>
+            <if expression="adjgross &gt; 50000">
+                <then>
+                    <assign variable="tax" expression="adjgross * 0.20"/>
+                </then>
+                <else>
+                    <assign variable="tax" expression="adjgross * 0.10"/>
+                </else>
+            </if>
+            <if expression="tax &lt; 0">
+                <then>
+                    <assign variable="tax" expression="100"/>
+                </then>
+                <else/>
+            </if>
+            <output expression="&quot;&quot; &amp; lastname" newline="True"/>
+            <output expression="&quot;Gross Income:  $&quot; &amp; grosspay" newline="True"/>
+            <output expression="&quot;Number of Dependents: &quot; &amp; nodep" newline="True"/>
+            <output expression="&quot;Adjusted Gross: $&quot; &amp; adjgross" newline="True"/>
+            <output expression="&quot;Income Tax: $&quot; &amp; tax" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
